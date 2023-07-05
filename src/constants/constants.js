@@ -6,7 +6,7 @@ export const projects = [
     image:
       "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fjp01.jpg?alt=media&token=b9076390-4516-4fd3-b55d-64811f0dce2c",
     // image: "/images/jp01.jpg",
-    tags: ["Node.js", "Microservices", "Flutter", "Socket.io"],
+    tags: ["Node.js", "Microservices", "Flutter", "Socket.io", "MongoDB"],
 
     source:
       "https://play.google.com/store/apps/details?id=com.scribble.thesuitch",
@@ -20,7 +20,7 @@ export const projects = [
     image:
       "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%20001.png?alt=media&token=130ea4e6-d6fc-4381-b65a-9e9c6722b001",
     // image: "/images/project 001.png",
-    tags: ["Next.js", "Microservices", "Node.js", "Socket.io"],
+    tags: ["Next.js", "Microservices", "Node.js", "Socket.io", "MongoDB"],
 
     source: "https://dashboard.thescribbleapp.com",
     visit: null,
@@ -33,7 +33,7 @@ export const projects = [
     image:
       "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fjp02.png?alt=media&token=b25fa786-1c19-4c58-9954-106b0a4737aa",
     // image: "/images/jp02.png",
-    tags: ["Node.js", "Monolithic Arc", "Flutter"],
+    tags: ["Node.js", "Monolithic Arc", "Flutter", "MongoDB"],
 
     source:
       "https://play.google.com/store/apps/details?id=com.kcebasketball.kcelite",
@@ -41,17 +41,17 @@ export const projects = [
     id: 33,
   },
   {
-    title: "Alamal Computers",
+    title: "Health Titan Pro",
     description:
-      "Welcome to Alamal Computer, the ultimate e-commerce platform dedicated to laptops, computers, and accessories. At Alamal Computer, we provide a seamless marketplace where both sellers and consumers can easily buy and sell items. Our platform supports secure transactions through PayPal.",
+      "Introducing Health Titan Pro, the online COVID vaccination center where you can fill out a form and get vaccinated within minutes. All the results will be sent to your email. Experience the convenience and speed of Health Titan Pro for your vaccination needs.",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%208.png?alt=media&token=de7e5f7a-f54b-403d-bec8-f2d36b630bf2",
-    // image: "/images/project 8.png",
-    tags: ["React", "Firebase", "Node.js", "Paypal"],
+      "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fhtp001.png?alt=media&token=ef567442-01ec-474f-be8f-e4791379300e",
+    // image: "/images/htp001.png",
+    tags: ["React", "Node.js", "Dropbox", "MongoDB"],
 
-    source: "https://alamal-computer.onrender.com",
-    visit: "https://github.com/Tanv33/Alamal-Computers",
-    id: 1,
+    source: "https://project-htp.web.app/",
+    visit: null,
+    id: 47,
   },
   {
     title: "NFT Market-place (Dreamhub)",
@@ -60,7 +60,7 @@ export const projects = [
     image:
       "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fssd01.png?alt=media&token=9a9ec35e-5c7f-4d40-bd40-bcbf6f2dd058",
     // image: "/images/ssd01.png",
-    tags: ["React", "Node.js", "MetaMask", "Web3.js"],
+    tags: ["React", "Node.js", "MetaMask", "Web3.js", "MongoDB"],
     source: "https://dreamhub.art",
     visit: null,
     id: 40,
@@ -79,13 +79,26 @@ export const projects = [
     id: 41,
   },
   {
+    title: "Alamal Computers",
+    description:
+      "Welcome to Alamal Computer, the ultimate e-commerce platform dedicated to laptops, computers, and accessories. At Alamal Computer, we provide a seamless marketplace where both sellers and consumers can easily buy and sell items. Our platform supports secure transactions through PayPal.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%208.png?alt=media&token=de7e5f7a-f54b-403d-bec8-f2d36b630bf2",
+    // image: "/images/project 8.png",
+    tags: ["React", "Firebase", "Node.js", "Paypal", "MongoDB"],
+
+    source: "https://alamal-computer.onrender.com",
+    visit: "https://github.com/Tanv33/Alamal-Computers",
+    id: 1,
+  },
+  {
     title: "Mini-FB",
     description:
       "Introducing 'MiniFb', a feature-rich web application that revolutionizes social networking. With Minifb, users can effortlessly post updates in real-time, delete their posts at their convenience, and explore their personalized profiles for a truly immersive social experience.",
     image:
       "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%207.png?alt=media&token=f554457d-6ca6-4d9b-a72b-5f36891258a2",
     // image: "/images/project 7.png",
-    tags: ["React", "Firebase", "Node.js", "Socket.io"],
+    tags: ["React", "Firebase", "Node.js", "Socket.io", "MongoDB"],
 
     source: "https://minifb.onrender.com",
     visit: "https://github.com/Tanv33/miniFB",
