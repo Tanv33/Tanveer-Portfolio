@@ -1,6 +1,6 @@
 ## Personal Portfolio
 
-### [Live Site](https://tanveer-e09d4.web.app/)
+### [Live Site](https://tanveer-e09d4.web.app)
 
 ![Portfolio Website](https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Ftanveer-portfolio.png?alt=media&token=ef272d0a-5004-469a-9ecb-38c521d6839f)
 
