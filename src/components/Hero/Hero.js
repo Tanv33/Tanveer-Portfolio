@@ -19,7 +19,7 @@ const Hero = (props) => (
       <LeftSection>
         <SectionTitle main center>
           Hello! <br />
-          I'm M.Tanveer Khan
+          I'm Tanveer Khan
         </SectionTitle>
         <SectionText>
           A Full Stack Backend Developer specializing in scalable server-side
