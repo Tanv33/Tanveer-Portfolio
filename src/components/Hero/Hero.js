@@ -26,7 +26,10 @@ const Hero = (props) => (
           applications with Node.js. Proficient in Next.js and React.js for
           seamless web development.
         </SectionText>
-        <Button onClick={handleClick}>Hire me</Button>
+        <div>
+          <Button onClick={handleClick}>Hire me</Button>
+          <Button onClick={handleClick}>Hire me</Button>
+        </div>
       </LeftSection>
     </Section>
   </>
