@@ -191,6 +191,7 @@ export const TimeLineData = [
 ];
 
 export const FiverUrl = "https://www.fiverr.com/tanv33r_khan";
+export const UpworkUrl = "https://www.upwork.com/freelancers/~0128ca58b87e6d95b6";
 export const GithubUrl = "https://github.com/Tanv33";
 export const LinkedInUrl =
   "https://www.linkedin.com/in/tanveer-khan-b4a3b621b/";
