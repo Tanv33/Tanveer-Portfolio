@@ -7,13 +7,16 @@ import {
 } from "../../styles/GlobalComponents";
 import Button from "../../styles/GlobalComponents/Button";
 import { LeftSection } from "./HeroStyles";
-import { FiverUrl, UpworkUrl } from "../../constants/constants";
+import { FiverUrl, ResumeUrl, UpworkUrl } from "../../constants/constants";
 
 const handleClickFiverr = () => {
   window.open(FiverUrl, "_blank");
 };
 const handleClickUpwork = () => {
   window.open(UpworkUrl, "_blank");
+};
+const handleClickResume = () => {
+  window.open(ResumeUrl, "_blank");
 };
 
 const Hero = (props) => (
@@ -29,9 +32,16 @@ const Hero = (props) => (
           applications with Node.js. Proficient in Next.js and React.js for
           seamless web development.
         </SectionText>
-        <div>
-          <Button onClick={handleClickUpwork}>Upwork</Button>
-          <Button onClick={handleClickFiverr}>Fiverr</Button>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" ,margin: "0 0 80px" }}>
+          <Button alt="upwork" onClick={handleClickUpwork}>
+            Upwork
+          </Button>
+          <Button alt="fiverr" onClick={handleClickFiverr}>
+            Fiverr
+          </Button>
+          <Button alt="resume" onClick={handleClickResume}>
+            Resume
+          </Button>
         </div>
       </LeftSection>
     </Section>
