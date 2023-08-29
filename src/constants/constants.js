@@ -1,5 +1,19 @@
 export const projects = [
   {
+    title: "The PartyCade",
+    description:
+      "The Partycade offers unique games for many occasions. Such as Birthday Dinners, Baby Showers, Bridal Showers and many more. You’ll get to enjoy a friendly fun competition with your loved ones all from your smart device. Can’t make it to the event? No worries, you can join the game room wherever you are.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2FpartycadeMain.png?alt=media&token=472f620d-3322-44da-97ac-5e3caa5d94a9",
+    // image: "/images/jp01.jpg",
+    tags: ["Node.js", "Prisma", "Flutter", "GraphQL", "Pubsub"],
+
+    source:
+      "https://play.google.com/store/apps/details?id=com.thepartycade.partycade",
+    visit: null,
+    id: 22,
+  },
+  {
     title: "Scribble",
     description:
       "Scribble Library. Showcase your work on our exclusive Scribble Library for all to see! Once you submit your information, we will post your submitted book cover and information in the Scribble Library Directory to be available for all users to see, read, rate and review!",
@@ -91,93 +105,93 @@ export const projects = [
     visit: "https://github.com/Tanv33/Alamal-Computers",
     id: 1,
   },
-  {
-    title: "Mini-FB",
-    description:
-      "Introducing 'MiniFb', a feature-rich web application that revolutionizes social networking. With Minifb, users can effortlessly post updates in real-time, delete their posts at their convenience, and explore their personalized profiles for a truly immersive social experience.",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%207.png?alt=media&token=f554457d-6ca6-4d9b-a72b-5f36891258a2",
-    // image: "/images/project 7.png",
-    tags: ["React", "Firebase", "Node.js", "Socket.io", "MongoDB"],
+  // {
+  //   title: "Mini-FB",
+  //   description:
+  //     "Introducing 'MiniFb', a feature-rich web application that revolutionizes social networking. With Minifb, users can effortlessly post updates in real-time, delete their posts at their convenience, and explore their personalized profiles for a truly immersive social experience.",
+  //   image:
+  //     "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%207.png?alt=media&token=f554457d-6ca6-4d9b-a72b-5f36891258a2",
+  //   // image: "/images/project 7.png",
+  //   tags: ["React", "Firebase", "Node.js", "Socket.io", "MongoDB"],
 
-    source: "https://minifb.onrender.com",
-    visit: "https://github.com/Tanv33/miniFB",
-    id: 1,
-  },
-  {
-    title: "Postman",
-    description:
-      "Introducing a simplified Postman clone, designed specifically for web developers to effortlessly test and validate their APIs. This user-friendly web application has been extensively modified for seamless usability and offers a straightforward interface.",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%201.png?alt=media&token=528b7ed5-a396-4062-bb75-72a3ea998bad",
-    // image: "/images/project 1.png",
-    tags: ["HTML5", "CSS3", "JavaScript"],
+  //   source: "https://minifb.onrender.com",
+  //   visit: "https://github.com/Tanv33/miniFB",
+  //   id: 1,
+  // },
+  // {
+  //   title: "Postman",
+  //   description:
+  //     "Introducing a simplified Postman clone, designed specifically for web developers to effortlessly test and validate their APIs. This user-friendly web application has been extensively modified for seamless usability and offers a straightforward interface.",
+  //   image:
+  //     "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%201.png?alt=media&token=528b7ed5-a396-4062-bb75-72a3ea998bad",
+  //   // image: "/images/project 1.png",
+  //   tags: ["HTML5", "CSS3", "JavaScript"],
 
-    source: "https://postman-tanveer.web.app",
-    visit: "https://github.com/Tanv33/postman",
-    id: 1,
-  },
-  {
-    title: "Text-Utils App",
-    description:
-      "Check out this unique app designed for real-time checking of spaces, words, and characters, among other features. Experience its special attributes, including dark mode and multiple color modes, which enhance your user experience.",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%205.png?alt=media&token=851cdde4-0df6-44e3-b0d8-7bff5728313f",
-    // image: "/images/project 5.png",
-    tags: ["React", "Javascript", "Bootstrap"],
-    source: "https://tanv33.github.io/React-TextUtils-App",
-    visit: "https://github.com/Tanv33/React-TextUtils-App",
-    id: 4,
-  },
-  {
-    title: "Todo App",
-    description:
-      "Task management made easy with this popular mobile app. Remember and organize your daily activities effortlessly. Streamline your productivity and stay on top of your tasks.",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%203.png?alt=media&token=37b7e931-edd1-4c66-bd8b-71dc7688e925",
-    // image: "/images/project 3.png",
-    tags: ["React", "Material-UI", "Firebase"],
-    source: "https://tanv33.github.io/React-Todo-App",
-    visit: "https://github.com/Tanv33/React-Todo-App",
-    id: 3,
-  },
-  {
-    title: "Weather App",
-    description:
-      "Discover the Weather app to search and view instant weather details for cities worldwide. Get insights into Nature, Temperature, Wind, Humidity, and Country information with a single click.",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%204.png?alt=media&token=678f6f6d-5ec8-467b-a9ab-e0d27720d30f",
-    // image: "/images/project 4.png",
-    tags: ["React", "Javascript", "React-Bootstrap"],
+  //   source: "https://postman-tanveer.web.app",
+  //   visit: "https://github.com/Tanv33/postman",
+  //   id: 1,
+  // },
+  // {
+  //   title: "Text-Utils App",
+  //   description:
+  //     "Check out this unique app designed for real-time checking of spaces, words, and characters, among other features. Experience its special attributes, including dark mode and multiple color modes, which enhance your user experience.",
+  //   image:
+  //     "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%205.png?alt=media&token=851cdde4-0df6-44e3-b0d8-7bff5728313f",
+  //   // image: "/images/project 5.png",
+  //   tags: ["React", "Javascript", "Bootstrap"],
+  //   source: "https://tanv33.github.io/React-TextUtils-App",
+  //   visit: "https://github.com/Tanv33/React-TextUtils-App",
+  //   id: 4,
+  // },
+  // {
+  //   title: "Todo App",
+  //   description:
+  //     "Task management made easy with this popular mobile app. Remember and organize your daily activities effortlessly. Streamline your productivity and stay on top of your tasks.",
+  //   image:
+  //     "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%203.png?alt=media&token=37b7e931-edd1-4c66-bd8b-71dc7688e925",
+  //   // image: "/images/project 3.png",
+  //   tags: ["React", "Material-UI", "Firebase"],
+  //   source: "https://tanv33.github.io/React-Todo-App",
+  //   visit: "https://github.com/Tanv33/React-Todo-App",
+  //   id: 3,
+  // },
+  // {
+  //   title: "Weather App",
+  //   description:
+  //     "Discover the Weather app to search and view instant weather details for cities worldwide. Get insights into Nature, Temperature, Wind, Humidity, and Country information with a single click.",
+  //   image:
+  //     "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%204.png?alt=media&token=678f6f6d-5ec8-467b-a9ab-e0d27720d30f",
+  //   // image: "/images/project 4.png",
+  //   tags: ["React", "Javascript", "React-Bootstrap"],
 
-    source: "https://tanv33.github.io/weatherBootstrap",
-    visit: "https://github.com/Tanv33/weatherBootstrap",
-    id: 2,
-  },
-  {
-    title: "Quiz Web-app",
-    description:
-      "A unique Quiz web app with special functionalities where users can view real-time answers and calculate their results instantly.",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%206.png?alt=media&token=a6e8a781-d090-4a70-81e9-8623692c3956",
-    // image: "/images/project 6.png",
-    tags: ["React", , "Javascript", "Bootstrap"],
-    source: "https://tanv33.github.io/Asinlab-Interview-Test",
-    visit: "https://github.com/Tanv33/Asinlab-Interview-Test",
-    id: 6,
-  },
-  {
-    title: "React Router App",
-    description:
-      "Check out my simple React Router app with attractive and visually appealing route definitions.",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%202.png?alt=media&token=c4c5c4c6-6ae0-4fdc-bf56-0ef42eee035e",
-    // image: "/images/project 2.png",
-    tags: ["React", , "Javascript", "Material-UI"],
-    source: "https://numberless-glove.surge.sh",
-    visit: "https://github.com/Tanv33/React-Router",
-    id: 0,
-  },
+  //   source: "https://tanv33.github.io/weatherBootstrap",
+  //   visit: "https://github.com/Tanv33/weatherBootstrap",
+  //   id: 2,
+  // },
+  // {
+  //   title: "Quiz Web-app",
+  //   description:
+  //     "A unique Quiz web app with special functionalities where users can view real-time answers and calculate their results instantly.",
+  //   image:
+  //     "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%206.png?alt=media&token=a6e8a781-d090-4a70-81e9-8623692c3956",
+  //   // image: "/images/project 6.png",
+  //   tags: ["React", , "Javascript", "Bootstrap"],
+  //   source: "https://tanv33.github.io/Asinlab-Interview-Test",
+  //   visit: "https://github.com/Tanv33/Asinlab-Interview-Test",
+  //   id: 6,
+  // },
+  // {
+  //   title: "React Router App",
+  //   description:
+  //     "Check out my simple React Router app with attractive and visually appealing route definitions.",
+  //   image:
+  //     "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%202.png?alt=media&token=c4c5c4c6-6ae0-4fdc-bf56-0ef42eee035e",
+  //   // image: "/images/project 2.png",
+  //   tags: ["React", , "Javascript", "Material-UI"],
+  //   source: "https://numberless-glove.surge.sh",
+  //   visit: "https://github.com/Tanv33/React-Router",
+  //   id: 0,
+  // },
 ];
 
 export const TimeLineData = [
@@ -191,7 +205,8 @@ export const TimeLineData = [
 ];
 
 export const FiverUrl = "https://www.fiverr.com/tanv33r_khan";
-export const UpworkUrl = "https://www.upwork.com/freelancers/~0128ca58b87e6d95b6";
+export const UpworkUrl =
+  "https://www.upwork.com/freelancers/~0128ca58b87e6d95b6";
 export const ResumeUrl = "https://www.cakeresume.com/tanveer-khan-21f68d";
 export const GithubUrl = "https://github.com/Tanv33";
 export const LinkedInUrl =
