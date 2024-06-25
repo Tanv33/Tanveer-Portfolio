@@ -28,8 +28,8 @@ const Hero = (props) => (
           I'm Tanveer Khan
         </SectionTitle>
         <SectionText>
-          A Full Stack Backend Developer specializing in scalable server-side
-          applications with Node.js. Proficient in Next.js and React.js for
+          A Full Stack Backend & Solana Blockchain Developer specializing in scalable server-side
+          applications with Node.js & Rust. Proficient in Next.js and React.js for
           seamless web development.
         </SectionText>
         <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" ,margin: "0 0 80px" }}>

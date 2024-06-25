@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  AiFillFacebook,
-  AiFillGithub,
-  AiFillInstagram,
-  AiFillLinkedin,
-} from "react-icons/ai";
+import { AiFillFacebook, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 import { SocialIcons } from "../Header/HeaderStyles";
 import {
@@ -19,7 +14,6 @@ import {
   SocialIconsContainer,
 } from "./FooterStyles";
 import {
-  BusinessEmail,
   FacebookUrl,
   GithubUrl,
   LinkedInUrl,
@@ -38,7 +32,6 @@ const Footer = () => {
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
           <LinkItem href={`mailto:${PersonalEmail}`}>{PersonalEmail}</LinkItem>
-          <LinkItem href={`mailto:${BusinessEmail}`}>{BusinessEmail}</LinkItem>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>

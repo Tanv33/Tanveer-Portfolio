@@ -1,5 +1,27 @@
 export const projects = [
   {
+    title: "Honeycomb Protocol",
+    description:
+      "The development of Web3 applications in gaming is often seen as overly complex, leading to a lack of specialized tools for game developers.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fhoneycomb2.png?alt=media&token=0e607a9e-98e8-4e47-b9ed-4d1eeec81e11",
+    tags: ["Rust", "Node.js"],
+    visit: null,
+    source: "https://docs.honeycombprotocol.com/",
+    id: 52,
+  },
+  {
+    title: "Proleague",
+    description:
+      "A web 3.0 platform on the Solana blockchain for hosting tournaments, enabling game sponsorships, and providing instant payouts for games.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproleague2.png?alt=media&token=41fbca51-fd49-4130-a364-da90f96c25fd",
+    tags: ["Rust", "Node.js", "Next.js", "MongoDB"],
+    visit: null,
+    source: "https://alpha.proleague.gg/",
+    id: 42,
+  },
+  {
     title: "The PartyCade",
     description:
       "The Partycade offers unique games for many occasions. Such as Birthday Dinners, Baby Showers, Bridal Showers and many more. You’ll get to enjoy a friendly fun competition with your loved ones all from your smart device. Can’t make it to the event? No worries, you can join the game room wherever you are.",
@@ -195,12 +217,27 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: "Passed my Matriculation in Computer Science" },
-  { year: 2019, text: "Passed my Intermediate in Pre-Engineering" },
-  { year: 2020, text: "Enrolled in High school for a BS in Computer Science" },
+  // { year: 2017, text: "Passed my Matriculation in Computer Science" },
+  // { year: 2019, text: "Passed my Intermediate in Pre-Engineering" },
+  {
+    year: 2020,
+    text: "Enrolled in university for a Bachelor's in Computer Science",
+  },
   {
     year: 2021,
     text: "Started as a freelance and onsite developer, embarking on my industry journey",
+  },
+  {
+    year: 2022,
+    text: "I have learned and struggled a lot. Difficult times make a person stronger",
+  },
+  {
+    year: 2023,
+    text: "Completed my bachelors degree",
+  },
+  {
+    year: 2024,
+    text: "Focusing on backend development using Node.js and Solana blockchain.",
   },
 ];
 
@@ -214,5 +251,4 @@ export const LinkedInUrl =
 export const FacebookUrl =
   "https://www.facebook.com/profile.php?id=100007686159316";
 export const MobileNumber = "0334-2177092";
-export const BusinessEmail = "typecodewithme@gmail.com";
 export const PersonalEmail = "tanveer.khan2692000@gmail.com";

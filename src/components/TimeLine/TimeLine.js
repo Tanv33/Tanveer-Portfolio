@@ -67,9 +67,9 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        Experienced Full Stack Backend Developer with over 2 years of
+        Experienced Full Stack Backend & Rust Solana Developer with over 2 years of
         experience. Passionate about delivering high-quality web solutions with
-        a strong foundation in Node.js. Committed to writing clean code,
+        a strong foundation in Node.js & Rust. Committed to writing clean code,
         providing exceptional user experiences, and staying updated with
         industry trends for innovative solutions.
       </SectionText>
