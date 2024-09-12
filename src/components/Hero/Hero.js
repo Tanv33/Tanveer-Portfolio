@@ -5,19 +5,9 @@ import {
   SectionText,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import Button from "../../styles/GlobalComponents/Button";
 import { LeftSection } from "./HeroStyles";
 import { FiverUrl, ResumeUrl, UpworkUrl } from "../../constants/constants";
-
-const handleClickFiverr = () => {
-  window.open(FiverUrl, "_blank");
-};
-const handleClickUpwork = () => {
-  window.open(UpworkUrl, "_blank");
-};
-const handleClickResume = () => {
-  window.open(ResumeUrl, "_blank");
-};
+import LinkButton from "../../styles/GlobalComponents/LinkButton";
 
 const Hero = (props) => (
   <>
@@ -28,20 +18,27 @@ const Hero = (props) => (
           I'm Tanveer Khan
         </SectionTitle>
         <SectionText>
-          A Full Stack Backend & Solana Blockchain Developer specializing in scalable server-side
-          applications with Node.js & Rust. Proficient in Next.js and React.js for
-          seamless web development.
+          A Full Stack Backend & Solana Blockchain Developer specializing in
+          scalable server-side applications with Node.js & Rust. Proficient in
+          Next.js and React.js for seamless web development.
         </SectionText>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" ,margin: "0 0 80px" }}>
-          <Button alt="upwork" onClick={handleClickUpwork}>
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "10px",
+            margin: "0 0 80px",
+          }}
+        >
+          <LinkButton alt="upwork" href={UpworkUrl} target="_blank">
             Upwork
-          </Button>
-          <Button alt="fiverr" onClick={handleClickFiverr}>
+          </LinkButton>
+          <LinkButton alt="fiverr" href={FiverUrl} target="_blank">
             Fiverr
-          </Button>
-          <Button alt="resume" onClick={handleClickResume}>
+          </LinkButton>
+          <LinkButton alt="resume" href={ResumeUrl} target="_blank">
             Resume
-          </Button>
+          </LinkButton>
         </div>
       </LeftSection>
     </Section>
