@@ -1,10 +1,35 @@
 {
   "hosting": {
     "public": "out",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "headers": [
+      {
+        "comment": "Next's build output is content-hashed, so a new build produces a new filename. Safe to cache forever.",
+        "source": "/_next/static/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        "comment": "Project screenshots are NOT content-hashed — replacing scribble.webp reuses the same URL. 7 days keeps repeat visits free without stranding viewers on a stale image for a year.",
+        "source": "**/*.@(png|jpg|jpeg|webp|gif|svg|ico)",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=604800" }
+        ]
+      },
+      {
+        "comment": "The resume is replaced periodically and is the one asset a visitor must not get stale. Revalidate every hour.",
+        "source": "**/*.pdf",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=3600, must-revalidate"
+          }
+        ]
+      }
     ]
   }
 }
