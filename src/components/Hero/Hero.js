@@ -5,8 +5,13 @@ import {
   SectionText,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import { LeftSection } from "./HeroStyles";
-import { FiverUrl, ResumeUrl, UpworkUrl } from "../../constants/constants";
+import { ButtonRow, LeftSection, ResumeNote } from "./HeroStyles";
+import {
+  FiverUrl,
+  ResumeUpdated,
+  ResumeUrl,
+  UpworkUrl,
+} from "../../constants/constants";
 import LinkButton from "../../styles/GlobalComponents/LinkButton";
 
 const Hero = (props) => (
@@ -15,31 +20,25 @@ const Hero = (props) => (
       <LeftSection>
         <SectionTitle main center>
           Hello! <br />
-          I'm Tanveer Khan
+          I'm Tanveer
         </SectionTitle>
         <SectionText>
-          A Full Stack Backend & Solana Blockchain Developer specializing in
-          scalable server-side applications with Node.js & Rust. Proficient in
-          Next.js and React.js for seamless web development.
+          Blockchain &amp; Backend Engineer. Four years building production
+          Node.js backends, the last two writing Solana programs in Rust and
+          Anchor.
         </SectionText>
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            gap: "10px",
-            margin: "0 0 80px",
-          }}
-        >
+        <ButtonRow>
+          <LinkButton alt="resume" href={ResumeUrl} target="_blank">
+            Resume
+          </LinkButton>
           <LinkButton alt="upwork" href={UpworkUrl} target="_blank">
             Upwork
           </LinkButton>
           <LinkButton alt="fiverr" href={FiverUrl} target="_blank">
             Fiverr
           </LinkButton>
-          <LinkButton alt="resume" href={ResumeUrl} target="_blank">
-            Resume
-          </LinkButton>
-        </div>
+        </ButtonRow>
+        <ResumeNote>Resume last updated {ResumeUpdated}</ResumeNote>
       </LeftSection>
     </Section>
   </>

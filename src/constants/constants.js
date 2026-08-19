@@ -1,47 +1,41 @@
 export const projects = [
   {
     title: "Honeycomb Protocol",
+    image: "/images/honeycomb.png",
     description:
-      "The development of Web3 applications in gaming is often seen as overly complex, leading to a lack of specialized tools for game developers.",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fhoneycomb2.png?alt=media&token=0e607a9e-98e8-4e47-b9ed-4d1eeec81e11",
-    tags: ["Rust", "Node.js"],
+      "Solana protocol giving game studios composable on-chain primitives instead of building Web3 plumbing themselves. I built the mission completion and reward calculation engine that defines player incentive mechanics.",
+    tags: ["Rust", "Anchor", "Node.js"],
     visit: null,
     source: "https://docs.honeycombprotocol.com/",
     id: 52,
   },
   {
-    title: "Proleague",
+    title: "Proleague.gg",
+    image: "/images/proleague.png",
     description:
-      "A web 3.0 platform on the Solana blockchain for hosting tournaments, enabling game sponsorships, and providing instant payouts for games.",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproleague2.png?alt=media&token=41fbca51-fd49-4130-a364-da90f96c25fd",
-    tags: ["Rust", "Node.js", "Next.js", "MongoDB"],
+      "Web3 tournament platform on Solana. I architected and deployed the on-chain program handling tournament creation, player entry and automated prize payouts for 500+ users, plus the TypeScript SDK the frontend integrates against.",
+    tags: ["Rust", "Anchor", "Node.js", "Next.js", "MongoDB"],
     visit: null,
-    source: "https://alpha.proleague.gg/",
+    source: "https://app.proleague.gg/",
     id: 42,
   },
   {
     title: "The PartyCade",
+    image: "/images/partycade.webp",
     description:
-      "The Partycade offers unique games for many occasions. Such as Birthday Dinners, Baby Showers, Bridal Showers and many more. You’ll get to enjoy a friendly fun competition with your loved ones all from your smart device. Can’t make it to the event? No worries, you can join the game room wherever you are.",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2FpartycadeMain.png?alt=media&token=472f620d-3322-44da-97ac-5e3caa5d94a9",
-    // image: "/images/jp01.jpg",
+      "Party game platform for birthdays, showers and gatherings — players join a shared game room from their own phones, in person or remote. I built the realtime backend behind it.",
     tags: ["Node.js", "Prisma", "Flutter", "GraphQL", "Pubsub"],
 
-    source:
-      "https://play.google.com/store/apps/details?id=com.thepartycade.partycade",
+    // Play Store listing delisted (404); card kept, dead link removed
+    source: null,
     visit: null,
     id: 22,
   },
   {
     title: "Scribble",
+    image: "/images/scribble.webp",
     description:
-      "Scribble Library. Showcase your work on our exclusive Scribble Library for all to see! Once you submit your information, we will post your submitted book cover and information in the Scribble Library Directory to be available for all users to see, read, rate and review!",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fjp01.jpg?alt=media&token=b9076390-4516-4fd3-b55d-64811f0dce2c",
-    // image: "/images/jp01.jpg",
+      "A library where authors publish their book covers for readers to browse, rate and review. I built the microservice backend and realtime layer.",
     tags: ["Node.js", "Microservices", "Flutter", "Socket.io", "MongoDB"],
 
     source:
@@ -51,11 +45,9 @@ export const projects = [
   },
   {
     title: "Scribble Dashboard",
+    image: "/images/scribble_dashboard.png",
     description:
       "Introducing the 'Scribble Dashboard,' a powerful CRM tool designed specifically for managing submitted book covers and information. With the Scribble Dashboard, users have complete control over the book submission process, ensuring seamless organization and efficient management.",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%20001.png?alt=media&token=130ea4e6-d6fc-4381-b65a-9e9c6722b001",
-    // image: "/images/project 001.png",
     tags: ["Next.js", "Microservices", "Node.js", "Socket.io", "MongoDB"],
 
     source: "https://dashboard.thescribbleapp.com",
@@ -64,25 +56,21 @@ export const projects = [
   },
   {
     title: "KC-Elite",
+    image: "/images/kc_elite.webp",
     description:
       "Elevate your basketball skills with the KC Elite Basketball Training Mobile App. Personalized workouts, expert coaching, progress tracking, and convenient scheduling all in one place. Reach new heights on the court. Unlock your full potential and take your basketball game to the next level.",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fjp02.png?alt=media&token=b25fa786-1c19-4c58-9954-106b0a4737aa",
-    // image: "/images/jp02.png",
-    tags: ["Node.js", "Monolithic Arc", "Flutter", "MongoDB"],
+    tags: ["Node.js", "Monolithic", "Flutter", "MongoDB"],
 
     source:
-      "https://play.google.com/store/apps/details?id=com.kcebasketball.kcelite",
+      "https://apps.apple.com/us/app/kc-elite-basketball-training/id6450276405",
     visit: null,
     id: 33,
   },
   {
     title: "Health Titan Pro",
+    image: "/images/health_titan_pro.png",
     description:
       "Introducing Health Titan Pro, the online COVID vaccination center where you can fill out a form and get vaccinated within minutes. All the results will be sent to your email. Experience the convenience and speed of Health Titan Pro for your vaccination needs.",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fhtp001.png?alt=media&token=ef567442-01ec-474f-be8f-e4791379300e",
-    // image: "/images/htp001.png",
     tags: ["React", "Node.js", "Dropbox", "MongoDB"],
 
     source: "https://project-htp.web.app/",
@@ -91,23 +79,19 @@ export const projects = [
   },
   {
     title: "NFT Market-place (Dreamhub)",
+    image: "/images/dreamhub.png",
     description:
       "Dreamhub is an Ethereum-based NFT market-place that allows creators to mint and sell their NFTs. Additionally, creators will be able to place their NFTs on the market for bidding and auction",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fssd01.png?alt=media&token=9a9ec35e-5c7f-4d40-bd40-bcbf6f2dd058",
-    // image: "/images/ssd01.png",
     tags: ["React", "Node.js", "MetaMask", "Web3.js", "MongoDB"],
-    source: "https://dreamhub.art",
+    source: "https://dreamhub-frontend.vercel.app/",
     visit: null,
     id: 40,
   },
   {
     title: "Women-Tribe",
+    image: "/images/women_tribe.png",
     description:
       "A thriving community that promotes inclusivity, education, empathy, and empowerment for women. To celebrate Pride Month, we have created our official Women Tribe Pride NFT! Establishing and funding a yearly scholarship program to help women in",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fssd02.png?alt=media&token=94475244-55be-410e-b642-75100d1bc1b3",
-    // image: "/images/ssd02.png",
     tags: ["React", "CSS3", "Bootstrap"],
 
     source: "https://womentribe.art/",
@@ -116,11 +100,9 @@ export const projects = [
   },
   {
     title: "Alamal Computers",
+    image: "/images/alamal_computers.png",
     description:
       "Welcome to Alamal Computer, the ultimate e-commerce platform dedicated to laptops, computers, and accessories. At Alamal Computer, we provide a seamless marketplace where both sellers and consumers can easily buy and sell items. Our platform supports secure transactions through PayPal.",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%208.png?alt=media&token=de7e5f7a-f54b-403d-bec8-f2d36b630bf2",
-    // image: "/images/project 8.png",
     tags: ["React", "Firebase", "Node.js", "Paypal", "MongoDB"],
 
     source: "https://alamal-computer.onrender.com",
@@ -129,11 +111,9 @@ export const projects = [
   },
   // {
   //   title: "Mini-FB",
+  //   image: "/images/mini_fb.png",
   //   description:
   //     "Introducing 'MiniFb', a feature-rich web application that revolutionizes social networking. With Minifb, users can effortlessly post updates in real-time, delete their posts at their convenience, and explore their personalized profiles for a truly immersive social experience.",
-  //   image:
-  //     "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%207.png?alt=media&token=f554457d-6ca6-4d9b-a72b-5f36891258a2",
-  //   // image: "/images/project 7.png",
   //   tags: ["React", "Firebase", "Node.js", "Socket.io", "MongoDB"],
 
   //   source: "https://minifb.onrender.com",
@@ -142,11 +122,9 @@ export const projects = [
   // },
   // {
   //   title: "Postman",
+  //   image: "/images/postman.png",
   //   description:
   //     "Introducing a simplified Postman clone, designed specifically for web developers to effortlessly test and validate their APIs. This user-friendly web application has been extensively modified for seamless usability and offers a straightforward interface.",
-  //   image:
-  //     "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%201.png?alt=media&token=528b7ed5-a396-4062-bb75-72a3ea998bad",
-  //   // image: "/images/project 1.png",
   //   tags: ["HTML5", "CSS3", "JavaScript"],
 
   //   source: "https://postman-tanveer.web.app",
@@ -155,11 +133,9 @@ export const projects = [
   // },
   // {
   //   title: "Text-Utils App",
+  //   image: "/images/text_utils_app.png",
   //   description:
   //     "Check out this unique app designed for real-time checking of spaces, words, and characters, among other features. Experience its special attributes, including dark mode and multiple color modes, which enhance your user experience.",
-  //   image:
-  //     "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%205.png?alt=media&token=851cdde4-0df6-44e3-b0d8-7bff5728313f",
-  //   // image: "/images/project 5.png",
   //   tags: ["React", "Javascript", "Bootstrap"],
   //   source: "https://tanv33.github.io/React-TextUtils-App",
   //   visit: "https://github.com/Tanv33/React-TextUtils-App",
@@ -167,11 +143,9 @@ export const projects = [
   // },
   // {
   //   title: "Todo App",
+  //   image: "/images/todo_app.png",
   //   description:
   //     "Task management made easy with this popular mobile app. Remember and organize your daily activities effortlessly. Streamline your productivity and stay on top of your tasks.",
-  //   image:
-  //     "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%203.png?alt=media&token=37b7e931-edd1-4c66-bd8b-71dc7688e925",
-  //   // image: "/images/project 3.png",
   //   tags: ["React", "Material-UI", "Firebase"],
   //   source: "https://tanv33.github.io/React-Todo-App",
   //   visit: "https://github.com/Tanv33/React-Todo-App",
@@ -179,11 +153,9 @@ export const projects = [
   // },
   // {
   //   title: "Weather App",
+  //   image: "/images/weather_app.png",
   //   description:
   //     "Discover the Weather app to search and view instant weather details for cities worldwide. Get insights into Nature, Temperature, Wind, Humidity, and Country information with a single click.",
-  //   image:
-  //     "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%204.png?alt=media&token=678f6f6d-5ec8-467b-a9ab-e0d27720d30f",
-  //   // image: "/images/project 4.png",
   //   tags: ["React", "Javascript", "React-Bootstrap"],
 
   //   source: "https://tanv33.github.io/weatherBootstrap",
@@ -192,11 +164,9 @@ export const projects = [
   // },
   // {
   //   title: "Quiz Web-app",
+  //   image: "/images/quiz_app.png",
   //   description:
   //     "A unique Quiz web app with special functionalities where users can view real-time answers and calculate their results instantly.",
-  //   image:
-  //     "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%206.png?alt=media&token=a6e8a781-d090-4a70-81e9-8623692c3956",
-  //   // image: "/images/project 6.png",
   //   tags: ["React", , "Javascript", "Bootstrap"],
   //   source: "https://tanv33.github.io/Asinlab-Interview-Test",
   //   visit: "https://github.com/Tanv33/Asinlab-Interview-Test",
@@ -204,11 +174,9 @@ export const projects = [
   // },
   // {
   //   title: "React Router App",
+  //   image: "/images/react_router.png",
   //   description:
   //     "Check out my simple React Router app with attractive and visually appealing route definitions.",
-  //   image:
-  //     "https://firebasestorage.googleapis.com/v0/b/bucket-a2d0b.appspot.com/o/postImages%2Fproject%202.png?alt=media&token=c4c5c4c6-6ae0-4fdc-bf56-0ef42eee035e",
-  //   // image: "/images/project 2.png",
   //   tags: ["React", , "Javascript", "Material-UI"],
   //   source: "https://numberless-glove.surge.sh",
   //   visit: "https://github.com/Tanv33/React-Router",
@@ -216,39 +184,47 @@ export const projects = [
   // },
 ];
 
+// Keep this at 5 entries. CarouselItem in TimeLineStyles.js is max-width 196px
+// inside a 1040px track with `justify-content: space-between` and no overflow
+// scroll above the `sm` breakpoint — a 6th entry overflows the section.
 export const TimeLineData = [
-  // { year: 2017, text: "Passed my Matriculation in Computer Science" },
-  // { year: 2019, text: "Passed my Intermediate in Pre-Engineering" },
   {
     year: 2020,
-    text: "Enrolled in university for a Bachelor's in Computer Science",
-  },
-  {
-    year: 2021,
-    text: "Started as a freelance and onsite developer, embarking on my industry journey",
+    text: "Started a Bachelor's in Computer Science at Benazir Bhutto Shaheed University, Lyari",
   },
   {
     year: 2022,
-    text: "I have learned and struggled a lot. Difficult times make a person stronger",
+    text: "Entered the industry as a MERN engineer, building web apps and mobile backends at Xomacs and SoftSyncDev",
   },
   {
     year: 2023,
-    text: "Completed my bachelors degree",
+    text: "Graduated, then joined Tumi Labs and began moving from MERN into Solana program development",
   },
   {
     year: 2024,
-    text: "Focusing on backend development using Node.js and Solana blockchain.",
+    text: "Shipped Solana programs to mainnet with Rust and Anchor, and won a Solana Hackathon with the Honeycomb Protocol team",
+  },
+  {
+    year: 2026,
+    text: "Working as a Solana & Backend Engineer — on-chain programs, TypeScript SDKs and the services around them",
   },
 ];
 
 export const FiverUrl = "https://www.fiverr.com/tanv33r_khan";
 export const UpworkUrl =
   "https://www.upwork.com/freelancers/~0128ca58b87e6d95b6";
-export const ResumeUrl = "https://www.cakeresume.com/tanveer-khan-21f68d";
+// Served from public/ by `next export`, so the PDF ships with the site instead
+// of depending on a third-party host. Bump ResumeUpdated whenever the PDF is
+// replaced — it is displayed next to the download and will otherwise go stale.
+export const ResumeUrl = "/Tanveer_Khan_Resume.pdf";
+export const ResumeUpdated = "August 2026";
 export const GithubUrl = "https://github.com/Tanv33";
 export const LinkedInUrl =
   "https://www.linkedin.com/in/tanveer-khan-b4a3b621b/";
-export const FacebookUrl =
-  "https://www.facebook.com/profile.php?id=100007686159316";
-export const MobileNumber = "0334-2177092";
+export const TwitterUrl = "https://x.com/tanv33";
+export const MediumUrl = "https://medium.com/@tanveer.khan2692000";
+export const MobileNumber = "+92 334 217 7092";
+// Unspaced form for tel: hrefs — spaces are not valid in a tel URI.
+export const MobileNumberTel = "+923342177092";
 export const PersonalEmail = "tanveer.khan2692000@gmail.com";
+export const Location = "Karachi, Pakistan";

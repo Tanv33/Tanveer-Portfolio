@@ -9,9 +9,9 @@ import { Box, Boxes, BoxNum, BoxText } from "./AcomplishmentsStyles";
 import axios from "axios";
 
 const defaultData = [
-  { number: 6, text: "Open Source Projects" },
-  { number: 45, text: "Github Followers" },
-  { number: 75, text: "Github Stars" },
+  { number: "$100K", text: "Hackathon Prize Won" },
+  { number: "4+", text: "Solana Programs on Mainnet" },
+  { number: "2.5K+", text: "Users Served" },
 ];
 
 const Acomplishments = () => {
@@ -19,16 +19,16 @@ const Acomplishments = () => {
 
   useEffect(() => {
     (async () => {
-      const { data: userData } = await getFollowers();
-      // console.log(userData);
-      if (userData) {
-        const newFollowers = data.map((obj) => {
-          if (obj.text === "Github Followers") {
-            return { ...obj, number: userData.followers };
-          }
-          return obj;
-        });
-        setData(newFollowers);
+      try {
+        const { data: userData } = await getFollowers();
+        if (userData) {
+          setData((current) => [
+            ...current,
+            { number: `${userData.followers}+`, text: "Github Followers" },
+          ]);
+        }
+      } catch (err) {
+        // Rate limited or offline: keep the static tiles.
       }
     })();
   }, []);
@@ -39,7 +39,7 @@ const Acomplishments = () => {
       <Boxes>
         {data.map((card, index) => (
           <Box key={index}>
-            <BoxNum>{`${card.number}+`}</BoxNum>
+            <BoxNum>{card.number}</BoxNum>
             <BoxText>{card.text}</BoxText>
           </Box>
         ))}

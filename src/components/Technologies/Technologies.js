@@ -1,5 +1,5 @@
 import React from "react";
-import { DiFirebase, DiReact, DiZend } from "react-icons/di";
+import { FaCubes, FaDocker, FaServer } from "react-icons/fa";
 import {
   Section,
   SectionDivider,
@@ -19,56 +19,60 @@ const Technologies = () => (
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked with a range a technologies in the web development world. From
-      Back-end To Blockchain
+      From Solana programs in Rust and Anchor to the Node.js services, data
+      models and infrastructure around them.
     </SectionText>
     <List>
       <ListItem>
         <picture>
-          <DiReact size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>Front-End</ListTitle>
-          <ListParagraph>
-            Experience with Next.js
-            <br />
-            React.js, Bootstrap, MaterialUi
-            <br />
-            Ant Design, HTML5, CSS3 <br />& JavaScript
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <picture>
-          <DiFirebase size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>Back-End</ListTitle>
-          <ListParagraph>
-            Experience with Node.js
-            <br />
-            Express.js, GraphQL, Nest.js
-            <br />
-            TypeScript, Microservices
-            <br />
-            Docker, PubSub, RabbitMQ
-            <br />
-            Prisma, Sequelize, MongoDB
-            <br />
-            MYSQL & Postgres
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <picture>
-          <DiFirebase size="3rem" />
+          <FaCubes size="3rem" />
         </picture>
         <ListContainer>
           <ListTitle>Blockchain</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            Solana Blockchain <br />
-            using Rust
+            Solana, Rust, Anchor
+            <br />
+            PDAs, CPIs, Token Programs
+            <br />
+            Metaplex, Bubblegum
+            <br />
+            Borsh Serialization
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <picture>
+          <FaServer size="3rem" />
+        </picture>
+        <ListContainer>
+          <ListTitle>Back-End</ListTitle>
+          <ListParagraph>
+            Node.js, Express.js, Fastify
+            <br />
+            NestJS, TypeScript
+            <br />
+            GraphQL, WebSockets
+            <br />
+            PostgreSQL, MongoDB, Redis
+            <br />
+            Prisma, BullMQ, Microservices
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <picture>
+          <FaDocker size="3rem" />
+        </picture>
+        <ListContainer>
+          <ListTitle>DevOps &amp; Front-End</ListTitle>
+          <ListParagraph>
+            Docker, CI/CD, GitHub Actions
+            <br />
+            AWS, GCP, DigitalOcean
+            <br />
+            Prometheus, Jest, TDD
+            <br />
+            Next.js, React.js
           </ListParagraph>
         </ListContainer>
       </ListItem>

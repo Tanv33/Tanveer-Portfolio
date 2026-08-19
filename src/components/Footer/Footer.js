@@ -1,5 +1,6 @@
 import React from "react";
-import { AiFillFacebook, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
+import { FaMedium } from "react-icons/fa";
 
 import { SocialIcons } from "../Header/HeaderStyles";
 import {
@@ -14,11 +15,14 @@ import {
   SocialIconsContainer,
 } from "./FooterStyles";
 import {
-  FacebookUrl,
   GithubUrl,
   LinkedInUrl,
+  Location,
+  MediumUrl,
   MobileNumber,
+  MobileNumberTel,
   PersonalEmail,
+  TwitterUrl,
 } from "../../constants/constants";
 
 const Footer = () => {
@@ -27,16 +31,23 @@ const Footer = () => {
       <LinkList>
         <LinkColumn>
           <LinkTitle>Call</LinkTitle>
-          <LinkItem href={`tel:${MobileNumber}`}>{MobileNumber}</LinkItem>
+          <LinkItem href={`tel:${MobileNumberTel}`}>{MobileNumber}</LinkItem>
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
           <LinkItem href={`mailto:${PersonalEmail}`}>{PersonalEmail}</LinkItem>
         </LinkColumn>
+        <LinkColumn>
+          <LinkTitle>Based in</LinkTitle>
+          <LinkItem as="span">{Location}</LinkItem>
+        </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>Innovating multiple project at a time</Slogan>
+          <Slogan>
+            Blockchain &amp; Backend Engineer &mdash; open to remote, hybrid or
+            relocation
+          </Slogan>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons href={GithubUrl} target="_blank">
@@ -45,8 +56,11 @@ const Footer = () => {
           <SocialIcons href={LinkedInUrl} target="_blank">
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
-          <SocialIcons href={FacebookUrl} target="_blank">
-            <AiFillFacebook size="3rem" />
+          <SocialIcons href={TwitterUrl} target="_blank">
+            <AiOutlineTwitter size="3rem" />
+          </SocialIcons>
+          <SocialIcons href={MediumUrl} target="_blank">
+            <FaMedium size="3rem" />
           </SocialIcons>
         </SocialContainer>
       </SocialIconsContainer>
