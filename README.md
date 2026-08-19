@@ -12,5 +12,4 @@ Setup:
 
 - run `npm i && npm run build && npm run dev`
 
-
 ## If you like it give it a star ⭐
