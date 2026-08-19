@@ -27,10 +27,17 @@ const Projects = () => (
     <GridContainer>
       {projects.map((p, i) => {
         return (
-          <BlogCard key={i}>
-            <Img src={p.image} />
+          <BlogCard key={i} hasImage={!!p.image}>
+            {p.image && (
+              <Img
+                src={p.image}
+                alt={`${p.title} screenshot`}
+                loading="lazy"
+                decoding="async"
+              />
+            )}
             <TitleContent>
-              <HeaderThree title>{p.title}</HeaderThree>
+              <HeaderThree>{p.title}</HeaderThree>
               <Hr />
             </TitleContent>
             <CardInfo className="card-info">{p.description}</CardInfo>
