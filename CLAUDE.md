@@ -39,13 +39,16 @@ firebase deploy --only hosting
 
 **The PartyCade** has `source: null` because its Play Store listing is delisted (404, verified with a browser user-agent); the card renders without links rather than shipping a 404. Two others were recovered onto new hosts and should not be reverted to their old URLs: Dreamhub moved off the dead `dreamhub.art` domain to `dreamhub-frontend.vercel.app`, and KC-Elite is linked to its **iOS App Store** listing since the Play Store one is also delisted. Re-verify any store or demo URL before adding it — several in this file have rotted.
 
-The résumé now lives only as a PDF at `public/Tanveer_Khan_Resume.pdf`, linked from the Hero
-via `ResumeUrl` and served by `next export` (previously a CakeResume link). The markdown
+The résumé now lives only as a PDF at `public/Tanveer_Khan_Resume.pdf` and is served by
+`next export` (previously a CakeResume link). It is **not currently linked from the site** —
+the Hero's Resume button and its "Resume last updated …" note are commented out in
+`Hero.js`, so `ResumeUrl` and `ResumeUpdated` are live constants with no render path until
+that block is uncommented. The markdown
 source docs that used to sit at the repo root (`Tanveer-info.md`, `Tanveer-resume.md`,
 `Tanveer-resume-org.md`) were deleted — the PDF is the single source of truth, so there is
 no in-repo text to diff the site copy against. When the PDF is replaced, update the site
-copy by hand and bump `ResumeUpdated` in `src/constants/constants.js`, which is displayed
-under the Hero buttons as "Resume last updated …" and will otherwise go stale.
+copy by hand and bump `ResumeUpdated` in `src/constants/constants.js` — it is what the
+hidden note renders, and will otherwise be stale on the day the button comes back.
 
 Claims the site deliberately does **not** make, and must not regain:
 
@@ -78,6 +81,10 @@ Note `Timeline` renders under the heading "About Me" (`id="about"`) — the comp
 
 There is **no Experience, Education or Open Source section**. The résumé's four employers, the BSCS degree, the godot-solana-sdk contribution, Backend-Template and the Medium article are documented in the two root markdown files but deliberately absent from the site — the largest remaining gap if hiring signal matters.
 
-**Buttons.** One variant: `LinkButton.js` renders `ButtonBack` + `LinkButtonFront` (an `<a>`, uses `href`/`target`) — the layered-gradient effect is the outer div plus an inner element that fades on hover. A `<button>` twin (`Button.js` + `ButtonFront`, driven by `onClick`) existed but was never imported; both were removed. Recover them from git history if a real button is ever needed.
+**Buttons.** The Hero has exactly one: "Let's Talk", which opens a Gmail compose window
+prefilled from `GmailComposeUrl` (subject + opening body line), with a small `MailToUrl`
+fallback link under it for visitors Gmail would bounce to a sign-in. The Upwork and Fiverr
+buttons were removed outright. One variant: `LinkButton.js` renders `ButtonBack` +
+`LinkButtonFront` (an `<a>`, uses `href`/`target`) — the layered-gradient effect is the outer div plus an inner element that fades on hover. A `<button>` twin (`Button.js` + `ButtonFront`, driven by `onClick`) existed but was never imported; both were removed. Recover them from git history if a real button is ever needed.
 
 **Runtime data.** `Acomplishments.js` renders its static `defaultData` tiles, then fetches `https://api.github.com/users/tanv33` via axios on mount and appends a live "Github Followers" tile. The call is wrapped in try/catch — an unauthenticated GitHub API request is rate-limited at 60/hour per IP, so failure is expected and must degrade to the static tiles rather than throw. Tile values carry their own suffix (`"$100K"`, `"4+"`); `BoxNum` renders `card.number` verbatim rather than appending `+`. Because the site is statically exported, this is the only live data on the page — the CRA-style `pages/api/` scaffold was deleted, since API routes cannot work under `next export`.

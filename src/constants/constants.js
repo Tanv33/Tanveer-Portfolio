@@ -210,9 +210,6 @@ export const TimeLineData = [
   },
 ];
 
-export const FiverUrl = "https://www.fiverr.com/tanv33r_khan";
-export const UpworkUrl =
-  "https://www.upwork.com/freelancers/~0128ca58b87e6d95b6";
 // Served from public/ by `next export`, so the PDF ships with the site instead
 // of depending on a third-party host. Bump ResumeUpdated whenever the PDF is
 // replaced — it is displayed next to the download and will otherwise go stale.
@@ -227,4 +224,14 @@ export const MobileNumber = "+92 334 217 7092";
 // Unspaced form for tel: hrefs — spaces are not valid in a tel URI.
 export const MobileNumberTel = "+923342177092";
 export const PersonalEmail = "tanveer.khan2692000@gmail.com";
+// Gmail's compose deep link, subject and opening line prefilled so the visitor
+// lands in a half-written message instead of a blank draft. `view=cm&fs=1`
+// opens the full compose window; Gmail redirects to a sign-in if the visitor
+// has no session, which is why the Hero also keeps a plain mailto: fallback.
+export const GmailComposeUrl =
+  "https://mail.google.com/mail/?view=cm&fs=1" +
+  `&to=${PersonalEmail}` +
+  `&su=${encodeURIComponent("Hello Tanveer — via your portfolio")}` +
+  `&body=${encodeURIComponent("Hi Tanveer,\n\nI'm reaching out about ")}`;
+export const MailToUrl = `mailto:${PersonalEmail}`;
 export const Location = "Karachi, Pakistan";

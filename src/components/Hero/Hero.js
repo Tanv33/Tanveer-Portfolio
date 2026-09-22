@@ -5,13 +5,8 @@ import {
   SectionText,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import { ButtonRow, LeftSection, ResumeNote } from "./HeroStyles";
-import {
-  FiverUrl,
-  ResumeUpdated,
-  ResumeUrl,
-  UpworkUrl,
-} from "../../constants/constants";
+import { ButtonRow, HeroNote, LeftSection } from "./HeroStyles";
+import { GmailComposeUrl, MailToUrl } from "../../constants/constants";
 import LinkButton from "../../styles/GlobalComponents/LinkButton";
 
 const Hero = (props) => (
@@ -28,17 +23,21 @@ const Hero = (props) => (
           Anchor.
         </SectionText>
         <ButtonRow>
+          <LinkButton href={GmailComposeUrl} target="_blank">
+            Let's Talk
+          </LinkButton>
+          {/* Resume button and its freshness note are hidden, not deleted —
+              ResumeUrl and ResumeUpdated still live in constants.js, so
+              restoring this is uncommenting it.
           <LinkButton alt="resume" href={ResumeUrl} target="_blank">
             Resume
           </LinkButton>
-          <LinkButton alt="upwork" href={UpworkUrl} target="_blank">
-            Upwork
-          </LinkButton>
-          <LinkButton alt="fiverr" href={FiverUrl} target="_blank">
-            Fiverr
-          </LinkButton>
+          */}
         </ButtonRow>
-        <ResumeNote>Resume last updated {ResumeUpdated}</ResumeNote>
+        <HeroNote>
+          Not a Gmail user? <a href={MailToUrl}>Mail me from your own app</a>
+          {/* <br />Resume last updated {ResumeUpdated} */}
+        </HeroNote>
       </LeftSection>
     </Section>
   </>
